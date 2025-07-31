@@ -1,357 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zelara.studio | Contemporary Fashion</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            scroll-behavior: smooth; 
- 
-        }
-
-        .title-font {
-            font-family: 'Playfair Display', serif;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9571232f-cf45-4c54-9ca6-1b3202372d1a.png') no-repeat center center/cover;
-            height: 100vh;
-            min-height: 600px;
-        }
-
-        .collection-card {
-            transition: all 0.3s ease;
-        }
-
-        .collection-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .nav-link::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #000;
-            transition: width .3s;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu {
-            transition: all 0.5s ease;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zelara Clothing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-900">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white z-50 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold title-font tracking-wider">ZELARA.STUDIO</a>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#collections" class="nav-link font-medium">Collections</a>
-                    <a href="#about" class="nav-link font-medium">About</a>
-                    <a href="#contact" class="nav-link font-medium">Contact</a>
-                    <a href="#" class="font-medium"><i class="fas fa-shopping-bag"></i></a>
-                </div>
-                <div class="md:hidden">
-                    <button id="menu-btn" class="text-gray-900 focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body class="bg-white text-gray-800">
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu md:hidden fixed w-full bg-white z-40 shadow-lg hidden" style="top: -100%">
-        <div class="px-4 py-8 space-y-6">
-            <a href="#collections" class="block text-lg font-medium py-2">Collections</a>
-            <a href="#about" class="block text-lg font-medium py-2">About</a>
-            <a href="#contact" class="block text-lg font-medium py-2">Contact</a>
-            <a href="#" class="block text-lg font-medium py-2">Shop</a>
-        </div>
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-black text-white">
+    <div class="text-center">
+      <h1 class="text-5xl font-bold mb-4">Welcome to Zelara</h1>
+      <p class="text-xl">Your style, your story.</p>
     </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero flex items-center justify-center text-center text-white relative">
-        <div class="container mx-auto px-4 z-10 mt-20">
-            <h1 class="text-4xl md:text-6xl font-bold title-font mb-4">Crafting Elegance</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Sustainable luxury apparel with timeless design</p>
-            <a href="#collections" class="bg-black text-white px-8 py-3 inline-block hover:bg-gray-800 transition">View Collections</a>
-        </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-            <a href="#collections" class="animate-bounce block">
-                <i class="fas fa-chevron-down text-2xl"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Collections Section -->
-    <section id="collections" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold title-font text-center mb-16">Our Collections</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Collection 1 -->
-                <div class="collection-card">
-                    <div class="overflow-hidden mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5adcfac5-a28f-4c3f-8293-f89a3388af8e.png" alt="Minimalist black dress with architectural cuts draped on a mannequin in a contemporary showroom" class="w-full h-auto hover:scale-105 transition duration-500 cursor-pointer" />
-                    </div>
-                    <h3 class="text-xl font-semibold">Constructed Minimalism</h3>
-                    <p class="text-gray-600 mt-2">The spring-summer collection</p>
-                    <p class="mt-2 font-medium">$199+</p>
-                </div>
-
-                <!-- Collection 2 -->
-                <div class="collection-card">
-                    <div class="overflow-hidden mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4679ac65-769d-4192-88b9-81ebfcff5094.png" alt="Earth-tone linen garments displayed on hangers in a bright, airy studio space with concrete floors" class="w-full h-auto hover:scale-105 transition duration-500 cursor-pointer" />
-                    </div>
-                    <h3 class="text-xl font-semibold">Organic Lines</h3>
-                    <p class="text-gray-600 mt-2">Sustainable natural wares</p>
-                    <p class="mt-2 font-medium">$149+</p>
-                </div>
-
-                <!-- Collection 3 -->
-                <div class="collection-card">
-                    <div class="overflow-hidden mb-4">
-                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/391cbc98-3c41-4284-ad4c-c89e2e854052.png" alt="Tailored gender-neutral suit with clean lines photographed against a muted pink background" class="w-full h-auto hover:scale-105 transition duration-500 cursor-pointer" />
-                    </div>
-                    <h3 class="text-xl font-semibold">Architectural Wear</h3>
-                    <p class="text-gray-600 mt-2">Bespoke tailoring</p>
-                    <p class="mt-2 font-medium">$299+</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex items-center">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fe15be26-3099-4bf2-94a2-8bd5a6ac28fe.png" alt="Fashion designer working in a light-filled atelier with fabric swatches and sewing materials neatly arranged" class="w-full h-auto rounded shadow-lg" />
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold title-font mb-6">Our Philosophy</h2>
-                    <p class="text-lg mb-4">
-                        Zelara.studio was born from a passion for creating garments that stand the test of time—both in quality and design. We believe in slow fashion that values craftsmanship, sustainability, and thoughtful construction.
-                    </p>
-                    <p class="text-lg mb-6">
-                        Each piece is designed in our atelier and produced in limited quantities using ethically sourced materials and responsible manufacturing processes.
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-                            <i class="fas fa-leaf text-green-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold">Sustainable Materials</h3>
-                            <p class="text-sm text-gray-600">Organic, recycled, and low-impact textiles</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4 mt-4">
-                        <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center">
-                            <i class="fas fa-hands-helping text-green-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-semibold">Ethical Production</h3>
-                            <p class="text-sm text-gray-600">Fair wages and safe working conditions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Product -->
-    <section class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex items-center flex-row-reverse">
-                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-10">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/42fc26f7-b522-4994-be41-d62779a5df59.png" alt="Detail shot of a high-quality white button-down shirt with mother-of-pearl buttons and French seams" class="w-full h-auto rounded shadow-lg" />
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-3xl md:text-4xl font-bold title-font mb-6">Featured: The Essential Shirt</h2>
-                    <p class="text-lg mb-4">
-                        Our signature piece reimagined for everyday wear. Crafted from 100% organic cotton with reinforced seams and mother-of-pearl buttons.
-                    </p>
-                    <div class="mb-6">
-                        <p class="font-medium mb-2">Key Features:</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Structured yet comfortable tailored fit</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Reinforced stress points for durability</li>
-                            <li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Crafted from premium organic cotton</li>
-                        </ul>
-                    </div>
-                    <button class="bg-black text-white px-8 py-3 hover:bg-gray-800 transition">Shop Now - $189</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold title-font text-center mb-16">Get In Touch</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
-                    <p class="mb-6">
-                        We'd love to hear from you. Reach out with questions, or visit our flagship store in the arts district.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-gray-600"></i>
-                            <p>123 Design Street, Fashion District<br>New York, NY 10001</p>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope mr-4 text-gray-600"></i>
-                            <p>hello@zelara.studio</p>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-phone-alt mr-4 text-gray-600"></i>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <h3 class="text-lg font-semibold mb-3">Follow Us</h3>
-                        <div class="flex space-x-4">
-                            <a href="#" class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300 transition"><i class="fab fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <form class="space-y-4">
-                        <div>
-                            <label for="name" class="block mb-1">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
-                        </div>
-                        <div>
-                            <label for="email" class="block mb-1">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-1">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
-                        </div>
-                        <div>
-                            <label for="message" class="block mb-1">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"></textarea>
-                        </div>
-                        <button type="submit" class="bg-black text-white px-8 py-3 hover:bg-gray-800 transition">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold title-font mb-4">ZELARA.STUDIO</h3>
-                    <p class="text-gray-400">Sustainable luxury and contemporary design.</p>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-lg mb-4">Shop</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">All Collections</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">New Arrivals</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Best Sellers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sale</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-lg mb-4">Information</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sustainability</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping & Returns</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-semibold text-lg mb-4">Newsletter</h3>
-                    <p class="text-gray-400 mb-4">Subscribe for updates and exclusive offers.</p>
-                    <div class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full bg-gray-800 text-white focus:outline-none">
-                        <button class="bg-white text-black px-4 hover:bg-gray-200 transition"><i class="fas fa-arrow-right"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400">© 2023 Zelara.studio. All rights reserved.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+  <!-- Collection Section -->
+  <section class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Collection</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        menuBtn.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.remove('hidden');
-                setTimeout(() => {
-                    mobileMenu.style.top = '80px';
-                }, 50);
-            } else {
-                mobileMenu.style.top = '-100%';
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 500);
-            }
-        });
+        <!-- T-Shirt Item -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="zelara-tshirt1.png" alt="Zelara T-Shirt" class="w-full h-96 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Zelara T-Shirt</h3>
+            <p class="text-gray-700 text-base mb-4">Premium cotton T-shirt with bold and unique style.</p>
+            <span class="text-green-600 text-lg font-bold">Rs. 1999</span>
+          </div>
+        </div>
 
-        // Close mobile menu when clicking a link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.style.top = '-100%';
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 500);
-            });
-        });
+      </div>
+    </div>
+  </section>
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>&copy; 2025 Zelara. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-
